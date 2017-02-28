@@ -227,9 +227,27 @@ color: hsl(0, 0%, 29%);
   display: flex;
   flex-direction: row;
 }
+#thesis_main{
+  border-bottom: 2px hsl(0, 0%, 95%) solid;
+}
 #fisma{
   background-color: hsl(0, 0%, 85%);
 }
 #thesis_images{
   margin-left: 16px;
+  width: 423px;
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 24px;
+  padding-bottom: 48px;
+}
+footer ul{
+  width: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
