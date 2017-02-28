@@ -161,6 +161,7 @@ color: hsl(0, 0%, 29%);
   background-color: hsl(0, 0%, 95%);
   display: flex;
   flex-direction: column;
+  padding-bottom: 32px;
 }
 .learning_row{
   display: flex;
@@ -199,4 +200,33 @@ color: hsl(0, 0%, 29%);
 }
 .comp_art{
   padding-bottom: 12px;
+}
+#thesis_title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+#thesis_title span:nth-child(1){
+  font-size: 2em;
+  font-weight: bold;
+}
+#video{
+  padding-left: 24px;
+  width: 60%;
+}
+.practice_text.video{
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 32px;
+  height: 100px;
+}
+#fisma, #now, #thesis_main{
+  display: flex;
+  flex-direction: row;
+}
+#fisma{
+  background-color: hsl(0, 0%, 85%);
 }
