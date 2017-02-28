@@ -1,6 +1,142 @@
 html{
   font-size: 16px;
+  font-family: sans-serif;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+header{
+  top: 0;
+  width: 100%;
+  background-color: white;
+  height: 64px;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  z-index: 5;
+}
+header img{
+  width: 3em;
+}
+header .header_text{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+header .links ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+}
+
+header li:nth-child(2n+0){
+  height: 64px;
+  width: 16px;
+  background-color: hsl(180, 56%, 73%);
+}
+.name #acad{
+  color: hsl(0, 0%, 55%);
 }
 body{
-  color: blue;
+color: hsl(0, 0%, 29%);
+}
+.banner{
+  background-color: hsl(0, 0%, 85%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.banner_image{
+  width: 60%;
+  padding: 32px 40px 32px 24px;
+}
+.banner_text{
+  width: 30%;
+  height: 310px;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: hsl(0, 0%, 29%);
+
+}
+#banner_head{
+  font-size: 2.25em;
+  font-weight: bold;
+}
+#banner_para{
+  font-size: 1.25em;
+  font-weight: bold;
+}
+#banner_button{
+  background-color: hsl(0, 0%, 29%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.info{
+  display: flex;
+  flex-direction: row;
+}
+.practice {
+  width: 60%;
+  padding: 32px 24px;
+}
+.practice_text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+}
+.practice_text span:nth-child(1){
+  font-size: 2em;
+  font-weight: bold;
+}
+#emanuel{
+  font-size: 0.75em;
+}
+.information{
+  width: 100%;
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+}
+.info_image{
+  width: 35%;
+  margin: 16px;
+}
+.info_text{
+  display: flex;
+  flex-direction: column;
+  max-width: 57%;
+
+
+}
+#orientation, #campus, #guest{
+  display: flex;
+  flex-direction: row;
+
+}
+#orientation:nth-child(1){
+  margin-top: 0px;
+}
+#guest{
+  background-color: hsl(0, 0%, 85%);
+
+}
+#guest_detail{
+  font-size: 1em;
+}
+#info_main{
+  display: flex;
+  flex-direction: row;
+  width: 423px;
 }
