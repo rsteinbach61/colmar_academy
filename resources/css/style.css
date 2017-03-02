@@ -1,8 +1,9 @@
 html{
   font-size: 16px;
-  font-family: Amiko, sans-serif;
 }
-
+.text_gray{
+  color: hsl(180, 0%, 59%);
+}
 img{
   width: 100%;
   height: auto;
@@ -13,10 +14,12 @@ header{
   background-color: white;
   height: 64px;
   font-family: Amiko, sans-serif;
-  display: flex;
-  flex-direction: row;
   position: fixed;
   z-index: 5;
+}
+#header_main{
+  display: flex;
+  flex-direction: row;
 }
 header img{
   width: 3em;
@@ -45,6 +48,10 @@ header li:nth-child(2n+0){
 }
 body{
 color: hsl(0, 0%, 29%);
+font-family: 'Amiko', sans-serif;
+}
+p{
+  color: hsl(180, 0%, 59%);
 }
 .banner{
   background-color: hsl(0, 0%, 85%);
@@ -250,4 +257,102 @@ footer ul{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+#header_mobile{
+  display: none;
+}
+
+@media only screen and (min-width: 479px){
+.mobile_image{
+  display: none;
+}
+}
+
+
+@media only screen and (max-width: 480px){
+  #header_mobile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 64px;
+
+  }
+  #header_main{
+    display:none;
+  }
+
+
+  #header_mobile img{
+    width: 2em;
+  }
+  #mobile_top{
+    height: 180px;
+    background-color: hsl(0, 0%, 29%);
+  }
+  .banner_image{
+    display: none;
+  }
+  .banner_text{
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .practice{
+    display: none;
+  }
+  #orientation, #campus, #guest{
+    display: flex;
+    flex-direction: column;
+  }
+.full_image{
+  display: none;
+}
+.info_image{
+  width: 100%;
+}
+.info_text{
+  margin-left: 32px;
+}
+#info_main{
+  width: 100%;
+}
+.learning_box img{
+  display: none;
+}
+.learning_row{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.course_text, .learning_box p, #thesis_images, .practice_text.video{
+  display: none;
+}
+.learning_box{
+  height: auto;
+  width: 100%;
+  background-color: hsl(0, 0%, 85%);
+  margin-left: 16px;
+  margin-right: 16px;
+
+}
+.learning_images{
+  background-color: white;
+}
+.learning_container{
+  width: 100%;
+  margin-right: 16px;
+  margin-left: 16px;
+  margin-bottom: 8px;
+}
+.practice_text.Learning{
+  background-color: white;
+}
+.learning_row.row1{
+  margin-bottom: 0px;
+}
+#video{
+  width: 100%;
+}
+
 }

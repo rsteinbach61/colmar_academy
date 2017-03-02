@@ -5,29 +5,40 @@
     <title>Colmar Academy</title>
     <link href="resources/css/reset.css" type="text/css" rel="stylesheet">
     <link href="resources/css/style.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Amiko" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amiko" rel="stylesheet" type="text/css">
   </head>
-  <header>
-    <img src="resources/images/ic-logo.svg">
-    <div class="header_text">
-      <div class="name">
-        <span>COLMAR</span><span id="acad">ACADEMY</span>
-      </div>
-      <div class="links">
-        <ul>
-          <li>On Campus</li>
-          <li></li>
-          <li>Online</li>
-          <li></li>
-          <li>For companies</li>
-          <li></li>
-          <li>Sign in</li>
-        </ul>
-      </div>
-    </div>
-  </header>
+
   <body>
+    <header>
+      <div id="header_main">
+        <img src="resources/images/ic-logo.svg">
+        <div class="header_text">
+          <div class="name">
+            <span>COLMAR</span><span id="acad">ACADEMY</span>
+          </div>
+          <div class="links">
+            <ul>
+              <li>On Campus</li>
+              <li></li>
+              <li>Online</li>
+              <li></li>
+              <li>For companies</li>
+              <li></li>
+              <li>Sign in</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="header_mobile">
+        <img src="resources/images/ic-logo.svg">
+        <img src="resources/images/ic-login.svg">
+        <img src="resources/images/ic-on-campus.svg">
+        <img src="resources/images/ic-online.svg">
+      </div>
+    </header>
     <div id="main">
+      <div id="mobile_top">
+      </div>
       <div class="banner">
         <div class="banner_image">
           <img src="resources/images/banner.jpg">
@@ -49,7 +60,7 @@
           <img src="resources/images/information-main.jpg">
           <div class="practice_text">
             <span>It doesn't hurt to keep practicing</span>
-            <span>"Curibitur vitaelibero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. sed non accumsan urna. phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula.</span>
+            <span class="text_gray">"Curibitur vitaelibero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. sed non accumsan urna. phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</span>
             <span id="emanuel">Emanuel, Sr Strategist at Hiring.com</span>
           </div>
         </div>
@@ -57,7 +68,8 @@
           <div class="information">
             <div id="orientation">
               <div class="info_image">
-                <img src="resources/images/information-orientation.jpg">
+                <img class="full_image" src="resources/images/information-orientation.jpg">
+                <img class="mobile_image" src="resources/images/information-orientation-mobile.jpg">
               </div>
               <div id="orientation_text" class="info_text">
                 <h3>Orientation date</h3>
@@ -67,7 +79,8 @@
             </div>
             <div id="campus">
               <div class="info_image">
-                <img src="resources/images/information-campus.jpg">
+                <img class="full_image" src="resources/images/information-campus.jpg">
+                <img class="mobile_image" src="resources/images/information-campus-mobile.jpg">
               </div>
               <div id="campus_text" class="info_text">
                 <h3>Our Campus</h3>
@@ -77,7 +90,8 @@
             </div>
             <div id="guest">
               <div class="info_image">
-                <img src="resources/images/information-guest-lecture.jpg">
+                <img class="full_image" src="resources/images/information-guest-lecture.jpg">
+                <img class="mobile_image" src="resources/images/information-guest-lecture-mobile.jpg">
               </div>
               <div id="guest_text" class="info_text">
                 <h3>Our guest lecture</h3>
@@ -167,7 +181,7 @@
         </video>
         <div class="practice_text video">
           <span>Reimagine urban</span>
-          <span>"Curibitur vitaelibero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. sed non accumsan urna. phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula.</span>
+          <span class="text_gray">"Curibitur vitaelibero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. sed non accumsan urna. phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</span>
         </div>
       </div>
       <div id="thesis_images">
@@ -192,12 +206,13 @@
     </div>
     </div>
   </div>
-  </body>
-  <footer>
-    <span>2016 Colmar Academy All rights reserved.</span>
+  <footer class="text_gray">
+    <span>&copy2016 Colmar Academy All rights reserved.</span>
     <ul>
       <li>Terms</li>
       <li>Privacy</li>
     </ul>
   </footer>
+  </body>
+
 </html>
